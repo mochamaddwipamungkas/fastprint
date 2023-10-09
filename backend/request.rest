@@ -1,0 +1,28 @@
+GET http://localhost:5001/status
+
+###
+GET http://localhost:5001/produk/677
+
+###
+POST http://localhost:5001/produk
+Content-Type: application/json
+
+{
+    "id_produk": 677,
+  "nama_produk": "sasdbgfgggfff",
+  "harga": 12500,
+  "id_kategori": 1,
+  "id_status": 1
+}
+
+###
+PATCH  http://localhost:5001/produk/677
+Content-Type: application/json
+
+{
+  "id_produk": 677,
+  "nama_produk": "aaaa",
+  "harga": 12500,
+  "id_kategori": 1,
+  "id_status": 1
+}
